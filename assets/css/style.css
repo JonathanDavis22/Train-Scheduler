@@ -1,0 +1,34 @@
+.jumbotron {
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    font-weight: bolder;
+}
+
+.lead {
+    font-family: 'Rye', cursive;
+    font-size: 24pt;
+}
+
+#train-form {
+    margin-top: 40px;
+}
+
+#train-result {
+    margin-top: 20px;
+}
+
+#nameSpace, #desSpace, #timeSpace, #freqSpace {
+    margin-left: 20px;
+}
+
+.btn {
+    margin-left: 20px;
+}
+
+.Remove {
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    margin: 0-auto;
+    /* margin-right: 5px; */
+}

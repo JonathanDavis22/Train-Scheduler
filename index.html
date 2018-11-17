@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+    <meta http-equiv="refresh" content="60">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One|Rye" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid bg-warning">
+                    <div class="container">
+                        <h1 class="display-4">Waitin' On A Train</h1>
+                        <p class="lead">Hear my train a-comin'</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" id="train-result">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Current Train Schedule</div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency (min)</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody id="train-data">
+                            <tr>
+                                <th scope="row">Slim Princess #8</th>
+                                <td>Alpine</td>
+                                <td>10000</td>
+                                <td>Never</td>
+                                <td>~</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" id="train-form">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        Add train
+                    </div>
+                    <form>
+
+                        <div class="form-group" id="nameSpace">
+                            <label for="trainName">Train Name</label>
+                            <input type="name" class="form-control" id="trainName" aria-describedby="NADA">
+                        </div>
+                        <div class="form-group" id="desSpace">
+                            <label for="Destination">Destination</label>
+                            <input type="name" class="form-control" id="destination" aria-describedby="NADA">
+                        </div>
+                        <div class="form-group" id="timeSpace">
+                            <label for="firstTrainTime">First Train Time (HH:mm — military time)</label>
+                            <input type="name" class="form-control" id="firstTrainTime" aria-describedby="NADA">
+                        </div>
+                        <div class="form-group" id="freqSpace">
+                            <label for="frequency">Frequency (min)</label>
+                            <input type="name" class="form-control" id="frequency" aria-describedby="NADA">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
