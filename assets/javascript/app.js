@@ -55,21 +55,17 @@ $(document).ready(function() {
             let newfrequency = childSnapshot.val().frequency;
             let firstTime = childSnapshot.val().firstTrainTime;
 
-        // Variables to manipulate
-        let start = firstTime;
-        let trainFreq = newfrequency;
-
         // First user train time converted
-        let firstTimeConverted = moment(start, "LT").subtract(1, "weeks");
+        let firstTimeConverted = moment(firstTime, "LT").subtract(1, "weeks");
 
         // Difference between times
         let diffTime = moment().diff(moment(firstTimeConverted), "minutes");
 
         // Time apart (remainder);
-        let tRemainder = diffTime % trainFreq;
+        let tRemainder = diffTime % newfrequency;
 
         // Minutes until train
-        let tMinutesTillTrain = trainFreq - tRemainder;
+        let tMinutesTillTrain = newfrequency - tRemainder;
 
         // Next train
         let nextTrain = moment().add(tMinutesTillTrain, "minutes").format("LT");
