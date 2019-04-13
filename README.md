@@ -5,7 +5,7 @@ A train scheduler built with Moment.
 ## Use
 
 Open the deployed GitHub Page, enter a train in the schedule, and keep up-to-date with the scheduler 
-https://jonathandavis22.github.io/Word-Guess-Game/
+https://jonathandavis22.github.io/Train-Scheduler/
 
 ### Technologies
 
