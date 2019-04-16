@@ -1,4 +1,9 @@
+body {
+    background-color: #e8e8e8;
+}
+
 .jumbotron {
+    margin-top: 40px;
     text-align: center;
     font-family: 'Faster One', cursive;
     font-weight: bolder;
@@ -10,7 +15,7 @@
 }
 
 #train-form {
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 #train-result {
@@ -21,8 +26,16 @@
     margin-left: 20px;
 }
 
+#nameSpace {
+    margin-top: 10px;
+}
+
 .btn {
     margin-left: 20px;
+}
+
+#submitButton {
+    margin-bottom: 15px;
 }
 
 .Remove {
